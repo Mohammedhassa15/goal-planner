@@ -1,12 +1,78 @@
 {
   "goals": [
     {
-     
+      "id": "7b03",
+      "title": "New Phone Fund",
+      "amount": 120000,
+      "dueDate": "2025-12-15",
+      "progress": 0,
+      "status": "pending",
+      "completed": true,
+      "deadline": "2026-07-02",
+      "saved": 120000
+    },
+    {
+      "id": "2d5e",
+      "title": "Vacation Fund ",
+      "target": 200000,
+      "saved": 45000,
+      "deadline": "2025-12-07",
+      "done": true,
+      "amount": 200000
+    },
+    {
+      "id": "d60b",
+      "title": "Loan Fund",
+      "amount": 500000,
+      "deadline": "2027-02-14",
+      "saved": 120000,
+      "completed": false
+    },
+    {
+      "id": "225d",
+      "title": "New laptop ",
+      "amount": 57000,
+      "deadline": "2026-02-06",
+      "saved": 12000,
+      "completed": false
     }
   ],
   "deposits": [
     {
-
+      "id": "1",
+      "goalId": 1,
+      "amount": 5000,
+      "date": "2025-07-17"
+    },
+    {
+      "id": "ae3d",
+      "goalId": null,
+      "amount": 30000,
+      "date": "2025-07-18T18:02:37.162Z"
+    },
+    {
+      "id": "f288",
+      "goalId": "2d5e",
+      "amount": 45000,
+      "date": "2025-07-18T18:03:32.322Z"
+    },
+    {
+      "id": "0a79",
+      "goalId": "d60b",
+      "amount": 120000,
+      "date": "2025-07-18T18:08:34.265Z"
+    },
+    {
+      "id": "a12f",
+      "goalId": "225d",
+      "amount": 12000,
+      "date": "2025-07-18T18:17:51.833Z"
+    },
+    {
+      "id": "1eae",
+      "goalId": "7b03",
+      "amount": 120000,
+      "date": "2025-07-18T18:37:54.992Z"
     }
   ]
 }
