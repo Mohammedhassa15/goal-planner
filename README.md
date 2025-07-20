@@ -1,12 +1,36 @@
-# React + Vite
+# 💰 Smart Goal Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal finance web app to help users create, track, and manage their savings goals. Built with **React**, **Vite**, **Tailwind CSS**, and **JSON Server**.
 
-Currently, two official plugins are available:
+##  Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend (Vercel)**: [https://goal-planner.vercel.app](https://goal-planner.vercel.app)
+- **Backend API (Render)**: [https://json-server-deployment-jdqr.onrender.com](https://json-server-deployment-jdqr.onrender.com)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Features
+
+-  Create, edit, and delete savings goals
+-  Add deposits to goals and track progress
+-  View progress bars and pie chart breakdowns
+-  See warnings for overdue or inactive goals
+-  Filter goals by category or deadline
+-  Smart insights and stats for better planning
+
+---
+
+##  Tech Stack
+
+- **React** (Vite) – Frontend
+- **Tailwind CSS** – Styling
+- **Chart.js** – Pie chart visualizations
+- **JSON Server** – Mock REST API backend
+- **Vercel** – Frontend deployment
+- **Render** – JSON Server backend deployment
+
+---
+
+
+
+
