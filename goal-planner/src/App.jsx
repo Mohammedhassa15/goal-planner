@@ -1,27 +1,30 @@
 import React, { useEffect, useState } from "react";
-import GoalForm from "./Components/GoalForm";
 import GoalList from "./Components/GoalList";
-import Stats from "./Components/Stats";
+import GoalForm from "./Components/GoalForm";
+import Overview from "./Components/Overview";
 
-const API_URL = "http://localhost:3000/goals";
+const API_URL = "https://json-server-deployment-1-rjqj.onrender.com/goals";
 
 function App() {
   const [goals, setGoals] = useState([]);
 
   useEffect(() => {
     fetch(API_URL)
-      .then((res) => res.json())
-      .then(setGoals);
+      .then(res => res.json())
+      .then(data => setGoals(data));
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-3xl font-bold text-center mb-6">Smart Goal Planner</h1>
+  <div className="min-h-screen bg-gradient-to-br from-emerald-100 to-emerald-200 text-gray-900 text-gray-800 p-6 py-8 px-4">
+    <h1 className="text-4xl font-bold mb-6 text-center text-indigo-700">Smart Goal Planner</h1>
+    <div className="max-w-5xl mx-auto space-y-8">
       <GoalForm setGoals={setGoals} />
-      <Stats goals={goals} />
+      <Overview goals={goals} />
       <GoalList goals={goals} setGoals={setGoals} />
     </div>
-  );
+  </div>
+);
+
 }
 
 export default App;

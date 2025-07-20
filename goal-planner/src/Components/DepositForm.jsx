@@ -1,62 +1,46 @@
 import React, { useState } from "react";
 
-const API_URL = "http://localhost:3000/goals";
+const API_URL = "https://json-server-deployment-1-rjqj.onrender.com/goals";
 
-function DepositForm({ goals, onDeposit }) {
-  const [selectedId, setSelectedId] = useState("");
+function DepositForm({ goal, setGoals }) {
   const [amount, setAmount] = useState("");
 
-  const handleDeposit = (e) => {
+  function handleDeposit(e) {
     e.preventDefault();
-    const goal = goals.find((g) => g.id === parseInt(selectedId));
-    if (!goal) return;
-
-    const updated = {
-      ...goal,
-      saved: goal.saved + parseFloat(amount),
-    };
+    const updatedAmount = parseFloat(goal.savedAmount) + parseFloat(amount);
 
     fetch(`${API_URL}/${goal.id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ saved: updated.saved }),
+      body: JSON.stringify({ savedAmount: updatedAmount })
     })
-      .then((res) => res.json())
-      .then(() => {
+      .then(res => res.json())
+      .then(updatedGoal => {
+        setGoals(prev => prev.map(g => (g.id === goal.id ? updatedGoal : g)));
         setAmount("");
-        onDeposit(); // refetch
       });
-  };
+  }
 
-  return (
-    <form onSubmit={handleDeposit} className="mb-6 bg-white p-4 rounded shadow">
-      <h2 className="text-xl font-semibold mb-2">Make a Deposit</h2>
-      <select
-        className="border p-2 w-full mb-2"
-        value={selectedId}
-        onChange={(e) => setSelectedId(e.target.value)}
-        required
-      >
-        <option value="">Select Goal</option>
-        {goals.map((g) => (
-          <option key={g.id} value={g.id}>
-            {g.title}
-          </option>
-        ))}
-      </select>
-      <input
-        className="border p-2 w-full mb-2"
-        type="number"
-        placeholder="Amount"
-        value={amount}
-        onChange={(e) => setAmount(e.target.value)}
-        required
-      />
-      <button className="bg-purple-500 text-white px-4 py-2 rounded" type="submit">
-        Deposit
-      </button>
-    </form>
-  );
+ return (
+  <form onSubmit={handleDeposit} className="flex gap-2 mt-2">
+    <input
+      type="number"
+      min="1"
+      value={amount}
+      onChange={e => setAmount(e.target.value)}
+      placeholder="Deposit"
+      required
+      className="flex-1 border rounded p-1"
+    />
+    <button
+      type="submit"
+      className="bg-green-600 text-white px-3 rounded hover:bg-green-700 transition text-sm"
+    >
+      Deposit
+    </button>
+  </form>
+);
+
 }
 
 export default DepositForm;
