@@ -1,10 +1,10 @@
-# 💰 Smart Goal Planner
+#  Smart Goal Planner
 
 A personal finance web app to help users create, track, and manage their savings goals. Built with **React**, **Vite**, **Tailwind CSS**, and **JSON Server**.
 
 ##  Live Demo
 
-- **Frontend (Vercel)**: [https://goal-planner.vercel.app](https://goal-planner.vercel.app)
+- **Frontend (Vercel)**: [https://goal-planner.vercel.app](goal-planner-beta.vercel.app)
 - **Backend API (Render)**: [https://json-server-deployment-jdqr.onrender.com](https://json-server-deployment-jdqr.onrender.com)
 
 ---
