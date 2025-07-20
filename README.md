@@ -49,9 +49,19 @@ A personal finance web app to help users create, track, and manage their savings
 - You type the category of the goal
 - You type in the deadline by which you want this goal to be achieved
 - You add the goal to your goals
-- 
 
-![Uploading Screenshot from 2025-07-20 19-36-13.png…]()
+## The Overview
+- You can see how many goals you have
+- The total amount you have saved
+- How many goals have you achieved
+
+## The Goals 
+- You can Edit the goals 
+- You can deposit money into each goal
+- You can track how much you have saved through the progress bar
+- You can Delete goals 
+
+
 
 
 
