@@ -5,7 +5,7 @@ A personal finance web app to help users create, track, and manage their savings
 ##  Live Demo
 
 - **Frontend (Vercel)**: [https://goal-planner.vercel.app](https://goal-planner-beta.vercel.app)
-- **Backend API (Render)**: [https://json-server-deployment-jdqr.onrender.com](https://json-server-deployment-jdqr.onrender.com)
+- **Backend API (Render)**: [https://json-server-deployment-jdqr.onrender.com](https://goal-planner-ln77.onrender.com)
 
 ---
 
