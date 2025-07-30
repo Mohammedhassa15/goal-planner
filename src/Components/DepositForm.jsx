@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const API_URL = "https://json-server-deployment-1-rjqj.onrender.com/goals";
+const API_URL = "https://goal-planner-ln77.onrender.com/goals";
 
 function DepositForm({ goal, setGoals }) {
   const [amount, setAmount] = useState("");

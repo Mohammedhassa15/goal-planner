@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DepositForm from "./DepositForm";
 
-const API_URL = "https://json-server-deployment-1-rjqj.onrender.com/goals";
+const API_URL = "https://goal-planner-ln77.onrender.com/goals";
 
 function GoalItem({ goal, setGoals }) {
   const { id, name, targetAmount, savedAmount, category, deadline } = goal;

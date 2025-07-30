@@ -3,7 +3,7 @@ import GoalList from "./Components/GoalList";
 import GoalForm from "./Components/GoalForm";
 import Overview from "./Components/Overview";
 
-const API_URL = "https://json-server-deployment-1-rjqj.onrender.com/goals";
+const API_URL = "https://goal-planner-ln77.onrender.com/goals";
 
 function App() {
   const [goals, setGoals] = useState([]);
